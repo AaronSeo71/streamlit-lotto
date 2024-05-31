@@ -113,4 +113,4 @@ if len(inputstring) > 0 :
         temp += str(number) + "\n"
     outputstring = temp
 st.text_area(label="생성된 로또 번호들:", value=outputstring, height=150)
-st.text('작은 재미와 행운과 응원이 되기를...')
+st.text('재미와 행운과 응원이 되기를...')
