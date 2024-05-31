@@ -103,12 +103,14 @@ def extract_numbers(data):
 
     return sorted(all_numbers)
 
-inputstring = st.text_area(label="원하는 문장, 글, 숫자 및 특수문자 등 마음껏 입력하세요:",max_chars=1000,height=250)
+st.title('GOD LUCK 4 U :gift:')
+st.subheader('입력한 데이터를 해싱하여 로또번호를 생성해드립니다.')
+inputstring = st.text_area(label="원하는 문장, 단어, 숫자 및 특수문자 등 마음껏 입력하세요:",max_chars=1000,height=250)
 numbers = extract_numbers(inputstring)
-output = ""
+outputstring = ""
 if len(inputstring) > 0 :
     temp = ""
     for number in numbers:
         temp += str(number) + "\n"
-    output = temp
-st.text_area(label="추출된 로또 번호들:", value=output, height=150)
+    outputstring = temp
+st.text_area(label="생성된 로또 번호들:", value=outputstring, height=150)
